@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Decodificador de texto - Alura ONE</title>
+  <link rel="stylesheet" type="text/css" href="./reset.css">
+  <link rel="stylesheet" type="text/css" href="./style.css">
+</head>
+<body class="principal">
+  <header>
+    <h1 class="titulo-neon">Decodificador de texto</h1>
+  </header>
+
+  <main>
+    <section class="area-texto">
+      <div class="texto">
+        <textarea id="texto-inserido" name="caixatexto" rows="4" cols="33" maxlength="140" placeholder="Digite o texto aqui!"></textarea>
+      </div>
+
+      <div class="obs">
+        <img src="./imagens/i.svg" alt="info">
+        <p>Apenas letras minúsculas e sem acento.</p>
+      </div>
+      
+      <div class="botoes">
+        <button id="botao-cripto" onclick="Criptografar()" type="text" name="criptografar">Criptografar</button>
+        <button id="botao-descripto" onclick="Descriptografar()" type="text" name="descriptografar">Descriptografar</button>
+      </div>
+    </section>
+
+    <section class="barra-lateral">
+      <div class="info">
+        <div class="bloco">
+          <img id="imagem" src="./imagens/boot.jpg" alt="imagem boot">
+          <h3 id="campo">Nenhuma mensagem encontrada</h3>
+          <p id="texto-trocar">Digite um texto que você deseja criptografar ou descriptografar.</p>
+        </div>
+        <div id="adicionar-botao" style="display: none;">
+          <button id="botao-copiar" onclick="CopiarTexto()" type="text" name="copiar">Copiar</button>
+          <button id="botao-limpar" onclick="LimparTexto()" type="text" name="limpar">Limpar</button>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <script src="./logic.js"></script>
+
+  <footer>
+    <a href="https://github.com/gama07" target="_blank"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" height="40px"></a>
+    <a href="https://github.com/gama07" target="_blank"><p>Bruna Lorena - 2024.</p></a>
+  </footer>
+</body>
+</html>
